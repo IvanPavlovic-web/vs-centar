@@ -135,7 +135,7 @@ function About() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <div className="image-overlay" />
-              <img src="/images/about.png" alt="Our team" loading="lazy" />
+              <img src="/vs-centar/images/about.png" alt="Our team" loading="lazy" />
             </motion.div>
           </motion.div>
         </div>
