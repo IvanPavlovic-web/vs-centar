@@ -13,7 +13,7 @@ function HeroCarousel() {
 
   const slides = [
     {
-      image: "/images/0.jpg",
+      image: "./images/0.jpg",
       title: "Protivpožarna",
       subtitle: "zaštita",
       category: "SISTEMI ZAŠTITE",
