@@ -1,0 +1,439 @@
+/* App.css - Base Responsive Styles */
+
+/* =================================================================
+   GLOBAL RESETS & BASE STYLES
+   ================================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  color: white;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* =================================================================
+   APP WRAPPER
+   ================================================================= */
+.App {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =================================================================
+   SECTION DEFAULTS
+   ================================================================= */
+.section {
+  padding: 80px 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: #111;
+  position: relative;
+}
+
+.section:nth-child(even) {
+  background: #0a0a0a;
+}
+
+/* =================================================================
+   CONTAINER
+   ================================================================= */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* =================================================================
+   TYPOGRAPHY
+   ================================================================= */
+.section-title {
+  font-size: clamp(28px, 6vw, 64px);
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #ff4d00;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* =================================================================
+   PLACEHOLDER CONTENT
+   ================================================================= */
+.placeholder-content {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+/* =================================================================
+   UTILITY CLASSES
+   ================================================================= */
+.text-gradient {
+  background: linear-gradient(135deg, #ff4d00, #ff6b2c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* =================================================================
+   SCROLLBAR STYLING
+   ================================================================= */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 77, 0, 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 77, 0, 0.5);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 77, 0, 0.3) #0a0a0a;
+}
+
+/* =================================================================
+   FOCUS STYLES - ACCESSIBILITY
+   ================================================================= */
+:focus {
+  outline: 2px solid #ff4d00;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #ff4d00;
+  outline-offset: 2px;
+}
+
+/* =================================================================
+   SELECTION STYLING
+   ================================================================= */
+::selection {
+  background: rgba(255, 77, 0, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(255, 77, 0, 0.3);
+  color: white;
+}
+
+/* =================================================================
+   IMAGES & MEDIA
+   ================================================================= */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* =================================================================
+   LINKS & BUTTONS
+   ================================================================= */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* =================================================================
+   RESPONSIVE BREAKPOINTS
+   ================================================================= */
+
+/* Tablet - 481px */
+@media (min-width: 481px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .section-subtitle {
+    margin-bottom: 60px;
+  }
+
+  .placeholder-content {
+    font-size: 17px;
+    padding: 70px 30px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Tablet Landscape - 769px */
+@media (min-width: 769px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .section {
+    padding: 100px 0;
+  }
+
+  .section-subtitle {
+    margin-bottom: 70px;
+  }
+
+  .placeholder-content {
+    font-size: 18px;
+    padding: 80px 40px;
+  }
+}
+
+/* Desktop - 1025px */
+@media (min-width: 1025px) {
+  .section {
+    padding: 120px 0;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 80px;
+  }
+
+  .placeholder-content {
+    padding: 90px 40px;
+  }
+}
+
+/* Large Desktop - 1441px */
+@media (min-width: 1441px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* =================================================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ================================================================= */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger tap targets for mobile */
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects */
+  * {
+    -webkit-tap-highlight-color: rgba(255, 77, 0, 0.1);
+  }
+}
+
+/* =================================================================
+   REDUCED MOTION
+   ================================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =================================================================
+   HIGH CONTRAST MODE
+   ================================================================= */
+@media (prefers-contrast: high) {
+  * {
+    border-color: currentColor !important;
+  }
+
+  .text-gradient {
+    -webkit-text-fill-color: unset;
+    color: #ff4d00;
+  }
+}
+
+/* =================================================================
+   PRINT STYLES
+   ================================================================= */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  .navbar,
+  .footer,
+  button,
+  .menu-overlay {
+    display: none !important;
+  }
+
+  body {
+    padding: 2cm;
+  }
+}
+
+/* =================================================================
+   DARK MODE (if implementing light mode switch)
+   ================================================================= */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0a0a0a;
+    color: white;
+  }
+}
+
+/* =================================================================
+   LANDSCAPE ORIENTATION
+   ================================================================= */
+@media (orientation: landscape) and (max-height: 500px) {
+  .section {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero-carousel {
+    min-height: 500px;
+  }
+}
+
+/* =================================================================
+   SMALL HEIGHT DEVICES
+   ================================================================= */
+@media (max-height: 600px) {
+  .section {
+    min-height: auto;
+  }
+}
+
+/* =================================================================
+   ULTRA WIDE SCREENS
+   ================================================================= */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* =================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ================================================================= */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
