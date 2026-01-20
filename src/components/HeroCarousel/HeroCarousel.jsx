@@ -13,7 +13,7 @@ function HeroCarousel() {
 
   const slides = [
     {
-      image: "/../../../public/images/0.jpg",
+      image: "/images/0.jpg",
       title: "Protivpožarna",
       subtitle: "zaštita",
       category: "SISTEMI ZAŠTITE",
@@ -21,7 +21,7 @@ function HeroCarousel() {
         "Projektovanje i primjena protivpožarnih sistema u skladu sa važećim propisima i standardima",
     },
     {
-      image: "/../../../public/images/1.jpg",
+      image: "/images/1.jpg",
       title: "Aparati",
       subtitle: "za gašenje",
       category: "OPREMA",
@@ -29,7 +29,7 @@ function HeroCarousel() {
         "Isporuka, kontrola i održavanje aparata i opreme za efikasno gašenje požara",
     },
     {
-      image: "/../../../public/images/3.jpg",
+      image: "/images/3.jpg",
       title: "Instalacije",
       subtitle: "i servis",
       category: "USLUGE",
@@ -37,7 +37,7 @@ function HeroCarousel() {
         "Ugradnja, servisiranje i redovno ispitivanje protivpožarnih instalacija",
     },
     {
-      image: "/../../../public/images/4.jpg",
+      image: "/images/4.jpg",
       title: "Obuke",
       subtitle: "i certifikati",
       category: "PREVENTIVA",
