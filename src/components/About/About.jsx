@@ -136,7 +136,7 @@ function About() {
             >
               <div className="image-overlay" />
               <img
-                src="/vs-centar/images/about.png"
+                src="/vs-centar/images/about.webp"
                 alt="Logo Vatroservis centra 2"
                 loading="lazy"
               />
