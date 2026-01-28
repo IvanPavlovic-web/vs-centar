@@ -135,7 +135,11 @@ function About() {
               transition={{ type: "spring", stiffness: 100 }}
             >
               <div className="image-overlay" />
-              <img src="/images/about.png" alt="Logo Vatroservis centra" loading="lazy" />
+              <img
+                src="/public/images/about.png"
+                alt="Logo Vatroservis centra"
+                loading="lazy"
+              />
             </motion.div>
           </motion.div>
         </div>
