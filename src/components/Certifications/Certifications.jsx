@@ -72,7 +72,7 @@ function Certifications() {
   ];
 
   return (
-    <div className="certifications-wrapper">
+    <div id="certifications" className="certifications-wrapper">
       <div className="certifications-container">
         {/* Header */}
         <div className="certifications-header">
