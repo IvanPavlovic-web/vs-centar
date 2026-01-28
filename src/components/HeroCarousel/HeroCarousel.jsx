@@ -84,6 +84,11 @@ function HeroCarousel() {
   }, [currentSlide]);
 
   const handleMouseDown = (e) => {
+    // Ignoriši drag ako je kliknuto na interaktivni element
+    if (e.target.closest("button, a, input, select, textarea")) {
+      return;
+    }
+
     setIsDragging(true);
     setStartX(e.pageX - carouselRef.current.offsetLeft);
     setScrollLeft(carouselRef.current.scrollLeft);
@@ -114,6 +119,11 @@ function HeroCarousel() {
   };
 
   const handleTouchStart = (e) => {
+    // Ignoriši drag ako je kliknuto na interaktivni element
+    if (e.target.closest("button, a, input, select, textarea")) {
+      return;
+    }
+
     setIsDragging(true);
     setStartX(e.touches[0].pageX - carouselRef.current.offsetLeft);
     setScrollLeft(carouselRef.current.scrollLeft);
