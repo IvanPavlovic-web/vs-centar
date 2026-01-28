@@ -136,7 +136,7 @@ function About() {
             >
               <div className="image-overlay" />
               <img
-                src="../assets/images/about.png"
+                src="/images/about.png"
                 alt="Logo Vatroservis centra 2"
                 loading="lazy"
               />
