@@ -37,7 +37,7 @@ function Contact() {
       console.log("Form data submitted:", formData);
       setIsSubmitting(false);
       setSubmitMessage(
-        "Hvala vam! Vaša poruka je uspješno poslana. Kontaktiraćemo vas u najkraćem mogućem roku."
+        "Hvala vam! Vaša poruka je uspješno poslana. Kontaktiraćemo vas u najkraćem mogućem roku.",
       );
 
       setFormData({
@@ -84,7 +84,7 @@ function Contact() {
   ];
 
   return (
-    <div className="contact-wrapper">
+    <div id="contact" className="contact-wrapper">
       <div className="contact-container">
         {/* Header */}
         <div className="contact-header">
