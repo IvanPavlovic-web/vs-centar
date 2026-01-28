@@ -136,8 +136,8 @@ function About() {
             >
               <div className="image-overlay" />
               <img
-                src="/public/images/about.png"
-                alt="Logo Vatroservis centra"
+                src="/assets/images/about.png"
+                alt="Logo Vatroservis centra 2"
                 loading="lazy"
               />
             </motion.div>
