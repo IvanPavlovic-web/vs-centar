@@ -1,6 +1,7 @@
 # Modern React Site with Advanced Animations
 
 This repository contains a static web application built with React and Vite, featuring rich animations and 3D elements.
+![Screenshot sajta](279_1x_shots_so.png)
 
 ## Tech Stack
 
