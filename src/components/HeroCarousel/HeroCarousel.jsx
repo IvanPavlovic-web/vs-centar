@@ -84,8 +84,8 @@ function HeroCarousel() {
   }, [currentSlide]);
 
   const handleMouseDown = (e) => {
-    // Ignoriši drag ako je kliknuto na interaktivni element
-    if (e.target.closest("button, a, input, select, textarea")) {
+    // Ignoriši drag ako je kliknuto na interaktivni element ili navbar
+    if (e.target.closest("button, a, input, select, textarea, nav, .navbar")) {
       return;
     }
 
@@ -119,8 +119,8 @@ function HeroCarousel() {
   };
 
   const handleTouchStart = (e) => {
-    // Ignoriši drag ako je kliknuto na interaktivni element
-    if (e.target.closest("button, a, input, select, textarea")) {
+    // Ignoriši drag ako je kliknuto na interaktivni element ili navbar
+    if (e.target.closest("button, a, input, select, textarea, nav, .navbar")) {
       return;
     }
 

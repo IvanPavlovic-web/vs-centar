@@ -1,5 +1,12 @@
 /* Navbar.css - Responsive Optimized */
+.navbar {
+  z-index: 100 !important;
+  pointer-events: none;
+}
 
+.navbar > * {
+  pointer-events: auto;
+}
 .navbar {
   position: fixed;
   top: 0;
