@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.css";
-import aboutImg from "../../images/about.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -137,7 +136,7 @@ function About() {
             >
               <div className="image-overlay" />
               <img
-                src={aboutImg}
+                src="/vs-centar/images/about.png"
                 alt="Logo Vatroservis centra 2"
                 loading="lazy"
               />
